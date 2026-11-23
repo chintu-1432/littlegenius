@@ -1,0 +1,469 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+.safari-world {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #e9f8e9, #f5ffe9, #e5f6e8);
+  font-family: 'Nunito', sans-serif;
+  color: #284b35;
+  overflow: hidden;
+  position: relative;
+}
+
+.safari-navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6%;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #dcebd9;
+}
+
+.safari-back {
+  color: #28784a;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.safari-brand {
+  color: #28784a;
+  font-family: 'Fredoka', cursive;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.safari-score {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #fff2cb;
+  color: #946c19;
+  font-weight: 900;
+}
+
+.safari-container {
+  position: relative;
+  z-index: 1;
+  width: min(850px, 92%);
+  margin: auto;
+  padding: 35px 0;
+}
+
+.safari-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.safari-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #579b63;
+  font-weight: 900;
+}
+
+.safari-heading h1 {
+  font-family: 'Fredoka', cursive;
+  font-size: clamp(30px, 5vw, 45px);
+  color: #28784a;
+  margin: 12px 0;
+}
+
+.safari-heading p {
+  color: #718575;
+  font-size: 16px;
+}
+
+.safari-progress-card {
+  background: white;
+  border-radius: 18px;
+  padding: 17px 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 20px rgba(49,105,64,0.07);
+}
+
+.safari-progress-info {
+  display: flex;
+  justify-content: space-between;
+  color: #55745c;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.safari-progress-info strong {
+  color: #32935a;
+}
+
+.safari-progress-track {
+  height: 9px;
+  background: #eaf2e9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.safari-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #46b86e, #a2d65c);
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+.animal-learning-card {
+  background: rgba(255,255,255,0.97);
+  border: 1px solid #e0eddf;
+  border-radius: 28px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(51,110,62,0.10);
+}
+
+.animal-category {
+  display: inline-block;
+  background: #eaf7e8;
+  color: #39834d;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.animal-stage {
+  min-height: 250px;
+  margin: 24px 0;
+  background: linear-gradient(145deg, #e2f8df, #f3ffe9);
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.animal-stage-circle {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 12px 30px rgba(67,139,74,0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animalBounce 2.5s ease-in-out infinite;
+}
+
+.animal-illustration {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.animal-decoration {
+  position: absolute;
+  font-size: 30px;
+  animation: decorationFloat 3s ease-in-out infinite;
+}
+
+.animal-star {
+  top: 35px;
+  right: 18%;
+}
+
+.animal-heart {
+  bottom: 30px;
+  left: 18%;
+  animation-delay: 0.8s;
+}
+
+.animal-information {
+  padding: 12px;
+}
+
+.animal-small-label {
+  color: #8ca891;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.animal-information h2 {
+  color: #28784a;
+  font-family: 'Fredoka', cursive;
+  font-size: 38px;
+  margin: 8px 0;
+}
+
+.animal-fact {
+  color: #758579;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.animal-sound-button,
+.animal-name-button {
+  display: block;
+  margin: 12px auto;
+  width: min(310px, 100%);
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.animal-sound-button {
+  background: linear-gradient(110deg, #279b59, #73c86d);
+  color: white;
+  box-shadow: 0 7px 18px rgba(39,155,89,0.20);
+}
+
+.animal-name-button {
+  background: #edf7ed;
+  color: #34844d;
+}
+
+.animal-sound-button:hover,
+.animal-name-button:hover {
+  transform: translateY(-3px);
+}
+
+.animal-quiz {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #e9f0e8;
+}
+
+.quiz-toggle {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 15px;
+  background: #fff0c8;
+  color: #89641d;
+  font-family: 'Fredoka', cursive;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.quiz-toggle:hover {
+  transform: scale(1.04);
+}
+
+.quiz-content {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f1faef;
+  animation: quizAppear 0.35s ease;
+}
+
+.quiz-content h3 {
+  font-family: 'Fredoka', cursive;
+  color: #28784a;
+  font-size: 23px;
+}
+
+.quiz-content p {
+  color: #78917c;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.quiz-option {
+  padding: 13px;
+  background: white;
+  color: #37824d;
+  border: 2px solid #d8ead7;
+  border-radius: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-option:hover {
+  background: #e2f6df;
+  border-color: #58ad66;
+  transform: translateY(-2px);
+}
+
+.quiz-feedback {
+  padding: 13px;
+  margin-top: 16px;
+  border-radius: 12px;
+  font-weight: 900;
+}
+
+.correct-feedback {
+  background: #ddf7e1;
+  color: #258344;
+}
+
+.wrong-feedback {
+  background: #fff2d9;
+  color: #a27624;
+}
+
+.animal-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 27px;
+}
+
+.animal-previous,
+.animal-next {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Fredoka', cursive;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.animal-previous:hover,
+.animal-next:hover {
+  transform: translateY(-3px);
+}
+
+.animal-previous {
+  background: #edf5ec;
+  color: #39834d;
+}
+
+.animal-next {
+  background: linear-gradient(110deg, #329c5b, #79c66c);
+  color: white;
+  box-shadow: 0 6px 15px rgba(50,156,91,0.2);
+}
+
+.safari-tip {
+  margin-top: 23px;
+  background: #fff9e6;
+  border: 1px solid #f1e8c7;
+  color: #90743b;
+  border-radius: 16px;
+  padding: 17px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.safari-footer {
+  padding: 25px 0;
+  text-align: center;
+  color: #8da391;
+  font-size: 13px;
+}
+
+.jungle-decoration {
+  position: absolute;
+  opacity: 0.3;
+  font-size: 65px;
+  pointer-events: none;
+  animation: decorationFloat 5s ease-in-out infinite;
+}
+
+.leaf-one {
+  top: 150px;
+  left: 2%;
+}
+
+.leaf-two {
+  top: 390px;
+  right: 2%;
+  animation-delay: 1s;
+}
+
+.leaf-three {
+  bottom: 100px;
+  left: 3%;
+  animation-delay: 2s;
+}
+
+.leaf-four {
+  bottom: 200px;
+  right: 4%;
+  animation-delay: 0.5s;
+}
+
+@keyframes animalBounce {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes decorationFloat {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-13px) rotate(8deg); }
+}
+
+@keyframes quizAppear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.safari-error {
+  padding: 50px;
+  text-align: center;
+  color: #a33;
+}
+
+@media (max-width: 600px) {
+  .safari-navbar {
+    padding: 14px;
+  }
+
+  .safari-brand {
+    font-size: 19px;
+  }
+
+  .safari-container {
+    width: 94%;
+    padding-top: 25px;
+  }
+
+  .animal-learning-card {
+    padding: 15px;
+  }
+
+  .animal-stage {
+    min-height: 220px;
+  }
+
+  .animal-stage-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .animal-illustration {
+    font-size: 80px;
+  }
+
+  .animal-navigation button {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+}
+.quiz-option.correct-option {
+  background: #35b779;
+  color: white;
+  border-color: #35b779;
+  animation: correctPulse 0.5s ease;
+}
+
+.quiz-option:disabled {
+  cursor: default;
+}
+
+@keyframes correctPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}

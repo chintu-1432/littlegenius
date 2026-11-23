@@ -1,0 +1,20 @@
+:root {
+  --primary: #8057E5;
+  --secondary: #55C7F2;
+  --accent: #FFD95A;
+  --highlight: #FF83B5;
+  --mint: #70DDB0;
+  --cream: #FFF9ED;
+  --orange: #FF976B;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
